@@ -22,7 +22,7 @@
     <label>Favorite food :</label>
     <input type="text" v-model="tempsFood" @keyup.alt="addFood" placeholder="press alt + , to add a new entry">
     <div class="pill" v-for="food in pet.favFoods" :key="food">
-      <span @click="deleteSkill(food)">{{ food }}</span>
+      <span @click="deleteFood(food)">{{ food }}</span>
     </div>
 
     <div class="submit">
